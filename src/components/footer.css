@@ -1,0 +1,36 @@
+footer {
+  background: #222;
+  bottom: 0;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.social {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 0;
+}
+
+.social li a {
+  display: inline-block;
+  padding: 5px 5px;
+}
+
+.social li {
+  font-size: 48px;
+  order: 3;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.item a:hover,
+.item a:hover::after {
+  color: #ccc;
+}

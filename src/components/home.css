@@ -1,0 +1,10 @@
+a {
+  color: #61dafb;
+  text-decoration: none;
+}
+
+.img {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}

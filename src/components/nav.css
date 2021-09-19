@@ -1,0 +1,106 @@
+/* 
+    CSS is hard. 
+    I got help from https://webdesign.tutsplus.com/tutorials/how-to-build-a-responsive-navigation-bar-with-flexbox--cms-33535 
+    */
+
+nav {
+  background: #222;
+  padding: 0 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu {
+  list-style-type: none;
+}
+
+.logo {
+  font-size: 20px;
+  padding: 7.5px 10px 7.5px 0;
+  width: auto;
+}
+
+.title {
+  font-size: 20px;
+  padding: 7.5px 10px 7.5px 0;
+}
+
+.item {
+  padding: 10px;
+}
+
+.item a:hover,
+.item a:hover::after {
+  color: #ccc;
+}
+
+/* Mobile */
+.menu {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.menu li a {
+  display: block;
+  padding: 15px 5px;
+}
+
+.toggle {
+  color: white;
+  font-size: 20px;
+  order: 1;
+}
+
+.item {
+  display: none;
+  order: 3;
+  text-align: center;
+  width: 100%;
+}
+
+.active.item {
+  display: block;
+}
+
+/* Tablet */
+@media all and (min-width: 700px) {
+  .menu {
+    justify-content: center;
+  }
+
+  .title {
+    flex: 1;
+  }
+
+  .toggle {
+    flex: 1;
+    order: 2;
+    text-align: right;
+  }
+}
+
+@media all and (min-width: 960px) {
+  .menu {
+    align-items: flex-start;
+    background: none;
+    flex-wrap: nowrap;
+  }
+  .logo {
+    order: 0;
+  }
+  .item {
+    display: block;
+    order: 1;
+    position: relative;
+    width: auto;
+  }
+  .toggle {
+    display: none;
+  }
+}
