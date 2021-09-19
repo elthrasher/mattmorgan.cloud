@@ -15,7 +15,6 @@ button {
   font-size: calc(10px + 2vmin);
 }
 
-p {
-  margin-left: 20vw;
-  margin-right: 20vw;
+.content {
+  margin: 5%;
 }

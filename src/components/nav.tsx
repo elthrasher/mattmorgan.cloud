@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './nav.css';
 
 const Nav = () => {
@@ -8,21 +9,27 @@ const Nav = () => {
     <nav>
       <ul className="menu">
         <li className="logo">
-          <a href="#">
+          <Link to="/">
             <i className="fas fa-cloud"></i>
-          </a>
+          </Link>
         </li>
         <li className="title">
-          <a href="#">Matt Morgan's Cloud Stuff</a>
+          <Link to="/">Matt Morgan's Cloud Stuff</Link>
         </li>
         <li className={`${menuOpen ? 'active ' : ''}item`}>
-          <a href="#">Blogposts</a>
+          <Link to="/posts" onClick={() => setMenuOpen(false)}>
+            Blogposts
+          </Link>
         </li>
         <li className={`${menuOpen ? 'active ' : ''}item`}>
-          <a href="#">Publications</a>
+          <Link to="/publications" onClick={() => setMenuOpen(false)}>
+            Publications
+          </Link>
         </li>
         <li className={`${menuOpen ? 'active ' : ''}item`}>
-          <a href="#">Projects</a>
+          <Link to="/projects" onClick={() => setMenuOpen(false)}>
+            Projects
+          </Link>
         </li>
         <li className="toggle">
           {menuOpen ? (

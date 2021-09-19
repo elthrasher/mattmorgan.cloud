@@ -4,7 +4,7 @@ import React from 'react';
 import photo from '../assets/photo medium.jpeg';
 
 const Home = () => (
-  <div>
+  <div className="content">
     <p>
       I'm Matt. I've worked in edtech for more than 20 years. I started as a
       ColdFusion developer in the early days of web. I put in some years doing
