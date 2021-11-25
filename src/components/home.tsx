@@ -32,7 +32,7 @@ const Home = () => (
       <a href="https://blacklivesmatter.com/">black lives matter</a>.
     </p>
     <p className="img">
-      <img src={photo} />
+      <img alt="Matt Morgan photo" src={photo} />
     </p>
   </div>
 );

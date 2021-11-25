@@ -1,6 +1,9 @@
+import './nav.css';
+
+import { faBars, faCloud, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import './nav.css';
 
 const Nav = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -9,8 +12,12 @@ const Nav = () => {
     <nav>
       <ul className="menu">
         <li className="logo">
-          <Link to="/">
-            <i className="fas fa-cloud"></i>
+          <Link aria-label="Matt Morgan's Cloud Stuff" to="/">
+            <FontAwesomeIcon
+              icon={faCloud}
+              aria-hidden="true"
+              className="fas fa-cloud"
+            ></FontAwesomeIcon>
           </Link>
         </li>
         <li className="title">
@@ -33,9 +40,15 @@ const Nav = () => {
         </li>
         <li className="toggle">
           {menuOpen ? (
-            <i className="fas fa-times" onClick={toggleMenu}></i>
+            <FontAwesomeIcon
+              icon={faTimes}
+              onClick={toggleMenu}
+            ></FontAwesomeIcon>
           ) : (
-            <i className="fas fa-bars" onClick={toggleMenu}></i>
+            <FontAwesomeIcon
+              icon={faBars}
+              onClick={toggleMenu}
+            ></FontAwesomeIcon>
           )}
         </li>
       </ul>

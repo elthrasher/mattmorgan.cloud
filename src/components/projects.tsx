@@ -5,6 +5,21 @@ const Projects = () => (
     <h1>Projects</h1>
     <article>
       <h2>
+        <a href="https://github.com/elthrasher/rds-iam-auth">
+          RDS IAM Authentication
+        </a>
+      </h2>
+      <p>
+        Reference implementation of{' '}
+        <a href="https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UsingWithRDS.IAMDBAuth.html">
+          IAM Database Authentication
+        </a>{' '}
+        for both MySQL and PostgreSQL written in{' '}
+        <a href="https://aws.amazon.com/cdk/">AWS CDK</a> and ready to deploy.
+      </p>
+    </article>
+    <article>
+      <h2>
         <a href="https://d1diosomfszyrs.cloudfront.net/">Planetstack</a>
       </h2>
       <p>
