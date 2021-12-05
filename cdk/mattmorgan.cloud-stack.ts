@@ -1,27 +1,27 @@
 import {
   Certificate,
   CertificateValidation,
-} from '@aws-cdk/aws-certificatemanager';
+} from 'aws-cdk-lib/aws-certificatemanager';
 import {
   Distribution,
   OriginAccessIdentity,
   ViewerProtocolPolicy,
-} from '@aws-cdk/aws-cloudfront';
-import { S3Origin } from '@aws-cdk/aws-cloudfront-origins';
-import { ARecord, HostedZone, RecordTarget } from '@aws-cdk/aws-route53';
-import { CloudFrontTarget } from '@aws-cdk/aws-route53-targets';
-import { BlockPublicAccess, Bucket } from '@aws-cdk/aws-s3';
-import { BucketDeployment, Source } from '@aws-cdk/aws-s3-deployment';
+} from 'aws-cdk-lib/aws-cloudfront';
+import { S3Origin } from 'aws-cdk-lib/aws-cloudfront-origins';
+import { ARecord, HostedZone, RecordTarget } from 'aws-cdk-lib/aws-route53';
+import { CloudFrontTarget } from 'aws-cdk-lib/aws-route53-targets';
+import { BlockPublicAccess, Bucket } from 'aws-cdk-lib/aws-s3';
+import { BucketDeployment, Source } from 'aws-cdk-lib/aws-s3-deployment';
 import {
-  DockerImage,
+  AssetHashType,
   CfnOutput,
-  Construct,
+  DockerImage,
   RemovalPolicy,
   Stack,
   StackProps,
-  AssetHashType,
-} from '@aws-cdk/core';
+} from 'aws-cdk-lib/core';
 import { execSync, ExecSyncOptions } from 'child_process';
+import { Construct } from 'constructs';
 import { copySync } from 'fs-extra';
 import { join } from 'path';
 

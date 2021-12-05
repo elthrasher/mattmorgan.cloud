@@ -1,4 +1,5 @@
-import { App } from '@aws-cdk/core';
+import { App } from 'aws-cdk-lib';
+
 import { MattMorganCloudStack } from './mattmorgan.cloud-stack';
 
 const app = new App();

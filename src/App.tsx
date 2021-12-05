@@ -1,7 +1,7 @@
 import './App.css';
 
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import Footer from './components/footer';
 import Home from './components/home';
@@ -18,20 +18,12 @@ function App() {
           <Nav />
         </header>
         <div className="App-content">
-          <Switch>
-            <Route path="/posts">
-              <Posts />
-            </Route>
-            <Route path="/publications">
-              <Publications />
-            </Route>
-            <Route path="/projects">
-              <Projects />
-            </Route>
-            <Route path="/">
-              <Home />
-            </Route>
-          </Switch>
+          <Routes>
+            <Route element={<Posts />} path="/posts" />
+            <Route element={<Publications />} path="/publications" />
+            <Route element={<Projects />} path="/projects" />
+            <Route element={<Home />} path="/" />
+          </Routes>
         </div>
         <Footer />
       </div>
