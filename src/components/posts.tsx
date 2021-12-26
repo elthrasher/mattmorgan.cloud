@@ -5,6 +5,18 @@ const Posts = () => (
     <h1>Blogposts</h1>
     <article>
       <h2>
+        <a href="https://www.freecodecamp.org/news/aws-cdk-v2-three-tier-serverless-application/">
+          AWS CDK v2 Tutorial - How to Create a Three-Tier Serverless
+          Application
+        </a>
+      </h2>
+      <p>
+        My first real beginner article and first for FreeCodeCamp. Set up a
+        three-tier serverless app with AWS CDK and some nice tooling tricks.
+      </p>
+    </article>
+    <article>
+      <h2>
         <a href="https://dev.to/aws-builders/testing-the-async-cloud-with-aws-cdk-33aj">
           Testing the Async Cloud with AWS CDK
         </a>

@@ -1,4 +1,12 @@
 import {
+  AssetHashType,
+  CfnOutput,
+  DockerImage,
+  RemovalPolicy,
+  Stack,
+  StackProps,
+} from 'aws-cdk-lib';
+import {
   Certificate,
   CertificateValidation,
 } from 'aws-cdk-lib/aws-certificatemanager';
@@ -12,14 +20,6 @@ import { ARecord, HostedZone, RecordTarget } from 'aws-cdk-lib/aws-route53';
 import { CloudFrontTarget } from 'aws-cdk-lib/aws-route53-targets';
 import { BlockPublicAccess, Bucket } from 'aws-cdk-lib/aws-s3';
 import { BucketDeployment, Source } from 'aws-cdk-lib/aws-s3-deployment';
-import {
-  AssetHashType,
-  CfnOutput,
-  DockerImage,
-  RemovalPolicy,
-  Stack,
-  StackProps,
-} from 'aws-cdk-lib/core';
 import { execSync, ExecSyncOptions } from 'child_process';
 import { Construct } from 'constructs';
 import { copySync } from 'fs-extra';
