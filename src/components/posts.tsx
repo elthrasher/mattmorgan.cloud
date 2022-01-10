@@ -5,6 +5,14 @@ const Posts = () => (
     <h1>Blogposts</h1>
     <article>
       <h2>
+        <a href="https://dev.to/aws-builders/first-look-at-lambda-powertools-typescript-2k3p">
+          First Look at Lambda Powertools TypeScript
+        </a>
+      </h2>
+      <p>Lambda Powertools TypeScript hit beta, so I took a look!</p>
+    </article>
+    <article>
+      <h2>
         <a href="https://www.freecodecamp.org/news/aws-cdk-v2-three-tier-serverless-application/">
           AWS CDK v2 Tutorial - How to Create a Three-Tier Serverless
           Application
