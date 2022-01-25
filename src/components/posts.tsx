@@ -5,6 +5,19 @@ const Posts = () => (
     <h1>Blogposts</h1>
     <article>
       <h2>
+        <a href="https://dev.to/aws-builders/how-to-use-source-maps-in-typescript-lambda-functions-with-benchmarks-4bo4">
+          How to Use Source Maps in TypeScript Lambda Functions (with
+          Benchmarks)
+        </a>
+      </h2>
+      <p>
+        Source Maps are needed to get useful stack traces out of TypeScript
+        applications and they're easy to enable. See my benchmarks and you'll be
+        using them in production too!
+      </p>
+    </article>
+    <article>
+      <h2>
         <a href="https://dev.to/aws-builders/first-look-at-lambda-powertools-typescript-2k3p">
           First Look at Lambda Powertools TypeScript
         </a>
