@@ -9,6 +9,7 @@ import Nav from './components/nav';
 import Posts from './components/posts';
 import Projects from './components/projects';
 import Publications from './components/publications';
+import Appearances from './components/appearances';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <div className="App-content">
           <Routes>
             <Route element={<Posts />} path="/posts" />
+            <Route element={<Appearances />} path="/appearances" />
             <Route element={<Publications />} path="/publications" />
             <Route element={<Projects />} path="/projects" />
             <Route element={<Home />} path="/" />

@@ -29,6 +29,11 @@ const Nav = () => {
           </Link>
         </li>
         <li className={`${menuOpen ? 'active ' : ''}item`}>
+          <Link to="/appearances" onClick={() => setMenuOpen(false)}>
+            Appearances
+          </Link>
+        </li>
+        <li className={`${menuOpen ? 'active ' : ''}item`}>
           <Link to="/publications" onClick={() => setMenuOpen(false)}>
             Publications
           </Link>
