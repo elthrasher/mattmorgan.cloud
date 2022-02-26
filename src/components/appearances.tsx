@@ -5,12 +5,17 @@ const Appearances = () => (
     <h1>Appearances</h1>
     <article>
       <h2>
-        <a href="https://vbrownbag.com/" id="vbrownbag">
+        <a
+          href="https://vbrownbag.com/2022/02/episode-followup-the-serverless-mindset-presented-by-matt-morgan/"
+          id="vbrownbag"
+        >
           vBrownBag
         </a>{' '}
         (February 16, 2022)
       </h2>
-      <p>YouTube Link (coming soon)</p>
+      <p>
+        <a href="https://youtu.be/qbb8YYm_ORI">YouTube Link</a>
+      </p>
       <p>
         <a href="https://docs.google.com/presentation/d/1OFV29csgGOZUf9mHphwiwzmmnwN4nyGJov_aIy2eaJ0/edit?usp=sharing">
           Slides
