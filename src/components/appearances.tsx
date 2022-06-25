@@ -5,6 +5,28 @@ const Appearances = () => (
     <h1>Appearances</h1>
     <article>
       <h2>
+        The Local Cloud - <a href="https://www.cdkday.com/">CDK Day</a> (May 26,
+        2022)
+      </h2>
+      <p>
+        <a href="https://youtu.be/Ey7bNVT4W1g?t=10036">YouTube Link</a>
+      </p>
+    </article>
+    <article>
+      <h2>
+        Accelerate cloud-native development with AWS CDK custom constructs -{' '}
+        <a href="https://aws.amazon.com/events/summits/washington-dc/">
+          AWS Summit DC
+        </a>{' '}
+        (May 25, 2022)
+      </h2>
+      <p>
+        <a href="https://youtu.be/rb-nCQuyK1M">YouTube Link</a>
+      </p>
+    </article>
+    <article>
+      <h2>
+        The Serverless Mindset -{' '}
         <a
           href="https://vbrownbag.com/2022/02/episode-followup-the-serverless-mindset-presented-by-matt-morgan/"
           id="vbrownbag"
@@ -24,6 +46,7 @@ const Appearances = () => (
     </article>
     <article>
       <h2>
+        Async Testing with AWS CDK -{' '}
         <a href="https://www.youtube.com/channel/UCevlD4Tabq5Dq8YkTcctolg">
           Cloud-Driven Development
         </a>{' '}
@@ -31,7 +54,7 @@ const Appearances = () => (
       </h2>
       <p>
         <a href="https://www.youtube.com/watch?v=4wtgKbNbzHo&t=6s">
-          Async Testing with AWS CDK
+          YouTube Link
         </a>
       </p>
     </article>

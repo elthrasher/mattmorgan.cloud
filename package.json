@@ -2,7 +2,7 @@
   "name": "mattmorgan.cloud",
   "version": "0.0.0",
   "scripts": {
-    "build": "tsc && vite build",
+    "build": "vite build",
     "clean": "rimraf cdk.out coverage dist",
     "deploy": "npm run clean && cdk deploy --require-approval never",
     "destroy": "cdk destroy",
