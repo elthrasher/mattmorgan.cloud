@@ -5,6 +5,7 @@ import {
   faTwitterSquare,
   faGithubSquare,
   faLinkedin,
+  faMastodon,
 } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -12,13 +13,10 @@ const Footer = () => (
   <footer>
     <ul className="social">
       <li>
-        <a
-          aria-label="twitter"
-          href="https://twitter.com/NullishCoalesce?ref_src=twsrc%5Etfw"
-        >
+        <a aria-label="github" href="https://github.com/elthrasher">
           <FontAwesomeIcon
             aria-hidden="true"
-            icon={faTwitterSquare}
+            icon={faGithubSquare}
           ></FontAwesomeIcon>
         </a>
         <a
@@ -30,10 +28,22 @@ const Footer = () => (
             icon={faLinkedin}
           ></FontAwesomeIcon>
         </a>
-        <a aria-label="github" href="https://github.com/elthrasher">
+        <a
+          aria-label="mastodon"
+          href="https://awscommunity.social/@serverlesscultist"
+        >
           <FontAwesomeIcon
             aria-hidden="true"
-            icon={faGithubSquare}
+            icon={faMastodon}
+          ></FontAwesomeIcon>
+        </a>
+        <a
+          aria-label="twitter"
+          href="https://twitter.com/NullishCoalesce?ref_src=twsrc%5Etfw"
+        >
+          <FontAwesomeIcon
+            aria-hidden="true"
+            icon={faTwitterSquare}
           ></FontAwesomeIcon>
         </a>
       </li>
