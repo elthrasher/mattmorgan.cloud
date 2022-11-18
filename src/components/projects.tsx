@@ -5,6 +5,22 @@ const Projects = () => (
     <h1>Projects</h1>
     <article>
       <h2>
+        <a href="https://constructs.dev/packages/aws-logs-comptroller">
+          AWS Logs Comptroller
+        </a>
+      </h2>
+      <p>
+        Pure Amazon States Language Step Function implementation of a scheduled
+        CloudWatch Log Retention/Pruner.
+      </p>
+      <p>
+        Also check out the{' '}
+        <a href="https://serverlessrepo.aws.amazon.com/applications/us-east-1/336848621206/sam-logs-comptroller">
+          SAM version
+        </a>
+        .
+      </p>
+      <h2>
         <a href="https://github.com/elthrasher/rds-iam-auth">
           RDS IAM Authentication
         </a>
