@@ -1,11 +1,32 @@
 import React from 'react';
+import ss22 from '../assets/Serverless Summit 22 - Sfn Steep Curve Max Power - Matt Morgan.pdf';
 
 const Appearances = () => (
   <div className="content">
     <h1>Appearances</h1>
     <article>
-      <h2>The Serverless Mindset - <a href="https://awscommunitydaydmv.super.site/">AWS Community Day DMV</a> (September 30, 2022)</h2>
-      <p><a href="https://docs.google.com/presentation/d/1yeCit3bVTjFyNTHzzEKfqDQ5Vlp-PT3T997uDCeCEMk/edit?usp=sharing">Slides</a></p>
+      <h2>
+        AWS Step Functions: Steep Curve; Maximum Power -{' '}
+        <a href="https://www.serverless-summit.io/">Serverless Summit 2022</a>{' '}
+        (November 16 & 17, 2022)
+      </h2>
+      <p>
+        <a href={ss22}>Slides</a>
+      </p>
+    </article>
+    <article>
+      <h2>
+        The Serverless Mindset -{' '}
+        <a href="https://awscommunitydaydmv.super.site/">
+          AWS Community Day DMV
+        </a>{' '}
+        (September 30, 2022)
+      </h2>
+      <p>
+        <a href="https://docs.google.com/presentation/d/1yeCit3bVTjFyNTHzzEKfqDQ5Vlp-PT3T997uDCeCEMk/edit?usp=sharing">
+          Slides
+        </a>
+      </p>
     </article>
     <article>
       <h2>
