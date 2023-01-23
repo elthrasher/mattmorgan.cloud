@@ -11,7 +11,7 @@ const Appearances = () => (
         (November 16 & 17, 2022)
       </h2>
       <p>
-        <a href="https://youtu.be/4ud339gA_Xo?t=1407">YouTube Link</a>
+        <a href="https://youtu.be/q5QOgrMUBUA">YouTube Link</a>
       </p>
       <p>
         <a href={ss22}>Slides</a>

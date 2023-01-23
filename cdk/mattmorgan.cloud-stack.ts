@@ -62,10 +62,7 @@ export class MattMorganCloudStack extends Stack {
               return false;
             }
             execSync('npm run build', execOptions);
-            copySync(join(__dirname, '../dist'), outputDir, {
-              ...execOptions,
-              recursive: true,
-            });
+            copySync(join(__dirname, '../dist'), outputDir);
             return true;
           },
         },
