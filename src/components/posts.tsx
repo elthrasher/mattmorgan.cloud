@@ -5,6 +5,30 @@ const Posts = () => (
     <h1>Blogposts</h1>
     <article>
       <h2>
+        <a href="https://dev.to/aws-builders/avoiding-the-serverless-workflow-antipattern-2ba1">
+          Avoiding the Serverless Workflow Antipattern
+        </a>
+      </h2>
+      <p>A thinly veiled argument in favor of managed services.</p>
+    </article>
+    <article>
+      <h2>
+        <a href="https://dev.to/aws-builders/appreciation-for-community-managers-26ol">
+          Appreciation for Community Managers
+        </a>
+      </h2>
+      <p>Holiday special.</p>
+    </article>
+    <article>
+      <h2>
+        <a href="https://dev.to/aws-builders/lambda-powertools-typescript-is-generally-available-1dm8">
+          Lambda Powertools TypeScript is Generally Available
+        </a>
+      </h2>
+      <p>What's changed since the first look?</p>
+    </article>
+    <article>
+      <h2>
         <a href="https://dev.to/aws-builders/how-to-use-source-maps-in-typescript-lambda-functions-with-benchmarks-4bo4">
           How to Use Source Maps in TypeScript Lambda Functions (with
           Benchmarks)
