@@ -1,9 +1,20 @@
 import React from 'react';
 import ss22 from '../assets/Serverless Summit 22 - Sfn Steep Curve Max Power - Matt Morgan.pdf';
+import sfn23 from '../assets/Step Functions Deep Dive.pdf';
 
 const Appearances = () => (
   <div className="content">
     <h1>Appearances</h1>
+    <article>
+      <h2>
+        AWS Step Functions Deep Dive -{' '}
+        <a href="https://sga.com/events">Serverless Boston/NYC</a> (April 21,
+        2023)
+      </h2>
+      <p>
+        <a href={sfn23}>Slides</a>
+      </p>
+    </article>
     <article>
       <h2>
         AWS Step Functions: Steep Curve; Maximum Power -{' '}
