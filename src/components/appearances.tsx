@@ -7,6 +7,18 @@ const Appearances = () => (
     <h1>Appearances</h1>
     <article>
       <h2>
+        Under the Spotlight -{' '}
+        <a href="https://gopherec.com/under-the-spotlight">GopheRec</a> (May 31,
+        2023)
+      </h2>
+      <p>
+        <a href="https://gopherec.com/under-the-spotlight/f/under-the-spotlight-with-matt-morgan">
+          Article
+        </a>
+      </p>
+    </article>
+    <article>
+      <h2>
         AWS Step Functions Deep Dive -{' '}
         <a href="https://sga.com/events">Serverless Boston/NYC</a> (April 21,
         2023)

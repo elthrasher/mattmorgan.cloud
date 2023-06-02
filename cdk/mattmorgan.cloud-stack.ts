@@ -24,6 +24,7 @@ import { execSync, ExecSyncOptions } from 'child_process';
 import { Construct } from 'constructs';
 import { copySync } from 'fs-extra';
 import { join } from 'path';
+import Swa from 'serverless-website-analytics';
 
 export class MattMorganCloudStack extends Stack {
   constructor(scope: Construct, id: string, props?: StackProps) {
@@ -110,6 +111,16 @@ export class MattMorganCloudStack extends Stack {
       zone: hostedZone,
       recordName: domainName,
       target: RecordTarget.fromAlias(new CloudFrontTarget(distribution)),
+    });
+
+    new Swa(this, 'analytics', {
+      allowedOrigins: ['*'],
+      awsEnv: {
+        account: this.account,
+        region: this.region,
+      },
+      environment: 'prod',
+      sites: ['mattmorgan.cloud'],
     });
 
     new CfnOutput(this, 'webUrl', { value: domainName });
