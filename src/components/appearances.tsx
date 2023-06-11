@@ -7,6 +7,20 @@ const Appearances = () => (
     <h1>Appearances</h1>
     <article>
       <h2>
+        IAM for serverless developers -{' '}
+        <a href="https://aws.amazon.com/events/summits/washington-dc/">
+          AWS Summit DC
+        </a>{' '}
+        (June 7, 2023)
+      </h2>
+      <p>
+        <a href="https://docs.google.com/presentation/d/125_wPJxhTE7XT4lsqHfm24oFO_dNtLTp/edit?usp=sharing&ouid=102813238435609667035&rtpof=true&sd=true">
+          Slides
+        </a>
+      </p>
+    </article>
+    <article>
+      <h2>
         Under the Spotlight -{' '}
         <a href="https://gopherec.com/under-the-spotlight">GopheRec</a> (May 31,
         2023)

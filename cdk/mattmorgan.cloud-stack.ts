@@ -16,7 +16,11 @@ import {
   ViewerProtocolPolicy,
 } from 'aws-cdk-lib/aws-cloudfront';
 import { S3Origin } from 'aws-cdk-lib/aws-cloudfront-origins';
-import { ARecord, HostedZone, RecordTarget } from 'aws-cdk-lib/aws-route53';
+import {
+  ARecord,
+  PublicHostedZone,
+  RecordTarget,
+} from 'aws-cdk-lib/aws-route53';
 import { CloudFrontTarget } from 'aws-cdk-lib/aws-route53-targets';
 import { BlockPublicAccess, Bucket } from 'aws-cdk-lib/aws-s3';
 import { BucketDeployment, Source } from 'aws-cdk-lib/aws-s3-deployment';
@@ -72,15 +76,18 @@ export class MattMorganCloudStack extends Stack {
 
     const domainName = 'mattmorgan.cloud';
 
-    const hostedZone = HostedZone.fromLookup(this, 'HostedZone', {
+    const hostedZone = PublicHostedZone.fromLookup(this, 'HostedZone', {
       domainName,
+      privateZone: false,
     });
 
     const certificate = new Certificate(this, 'WebsiteCert', {
       domainName,
-      validation: CertificateValidation.fromDnsMultiZone({
-        [domainName]: hostedZone,
-      }),
+      subjectAlternativeNames: [
+        'analytics.mattmorgan.cloud',
+        'login.analytics.mattmorgan.cloud',
+      ],
+      validation: CertificateValidation.fromDns(hostedZone),
     });
 
     const distribution = new Distribution(this, 'Distribution', {
@@ -114,10 +121,21 @@ export class MattMorganCloudStack extends Stack {
     });
 
     new Swa(this, 'analytics', {
-      allowedOrigins: ['*'],
+      allowedOrigins: ['mattmorgan.cloud'],
+      // auth: {
+      //   cognito: {
+      //     loginSubDomain: 'login',
+      //     users: [{ email: 'elthrasher@gmail.com', name: 'Matt Morgan' }],
+      //   },
+      // },
       awsEnv: {
         account: this.account,
         region: this.region,
+      },
+      domain: {
+        name: 'analytics.mattmorgan.cloud',
+        certificate,
+        hostedZone,
       },
       environment: 'prod',
       sites: ['mattmorgan.cloud'],

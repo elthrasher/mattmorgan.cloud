@@ -1,3 +1,6 @@
 {
-  "app": "npx ts-node cdk/mattmorgan.cloud.ts"
+  "app": "npx ts-node cdk/mattmorgan.cloud.ts",
+  "context": {
+    "@aws-cdk/customresources:installLatestAwsSdkDefault": false
+  }
 }
